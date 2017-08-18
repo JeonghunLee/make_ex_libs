@@ -27,7 +27,7 @@ This sample makefile about main program with static library is easy to make it.
 
 ## Result 
 
-<code>
+<pre><code>
  $ make
 ---------------------------------
 Building sub direcory
@@ -66,4 +66,4 @@ Building Main Test Program
 ---------------------------------
 gcc -Iinclude -c MainTest.c
 gcc -Iinclude -o MainTest MainTest.o  tst1.o tst2.o -L. -L./libs -lsub1 -lsub2
-</code>
+</code></pre>
