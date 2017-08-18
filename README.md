@@ -1,5 +1,8 @@
-Sample Example Makefile about Main program with static library  
+## Sample Example Makefile
+This sample makefile about main program with static library is easy to make it.  
 
+
+## File Structure 
 
 $ tree -a -A
 tqq MainTest.c
@@ -20,6 +23,8 @@ x   mqq sub2.c
 tqq subdir
 tqq tst1.c
 mqq tst2.c
+
+## Result 
 
 $ make
 ---------------------------------
