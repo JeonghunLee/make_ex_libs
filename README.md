@@ -3,7 +3,8 @@ This sample makefile about main program with static library is easy to make it.
 
 
 ## File Structure 
- $ tree -a -A
+
+$ tree -a -A
 ├── MainTest.c
 ├── Makefile
 ├── Rule.make
@@ -22,7 +23,7 @@ This sample makefile about main program with static library is easy to make it.
 ├── subdir
 ├── tst1.c
 └── tst2.c
-</code>
+
 
 
 ## Result 
