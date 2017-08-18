@@ -3,30 +3,32 @@ This sample makefile about main program with static library is easy to make it.
 
 
 ## File Structure 
+ $ tree -a -A
+├── MainTest.c
+├── Makefile
+├── Rule.make
+├── include
+│   ├── sub1.h
+│   ├── sub2.h
+│   └── test.h
+├── sub1
+│   ├── Makefile
+│   ├── sub1.c
+│   └── sub2.c
+├── sub2
+│   ├── Makefile
+│   ├── sub1.c
+│   └── sub2.c
+├── subdir
+├── tst1.c
+└── tst2.c
+</code>
 
-$ tree -a -A
-tqq MainTest.c
-tqq Makefile
-tqq Rule.make
-tqq include
-x   tqq sub1.h
-x   tqq sub2.h
-x   mqq test.h
-tqq sub1
-x   tqq Makefile
-x   tqq sub1.c
-x   mqq sub2.c
-tqq sub2
-x   tqq Makefile
-x   tqq sub1.c
-x   mqq sub2.c
-tqq subdir
-tqq tst1.c
-mqq tst2.c
 
 ## Result 
 
-$ make
+<code>
+ $ make
 ---------------------------------
 Building sub direcory
 ---------------------------------
@@ -64,4 +66,4 @@ Building Main Test Program
 ---------------------------------
 gcc -Iinclude -c MainTest.c
 gcc -Iinclude -o MainTest MainTest.o  tst1.o tst2.o -L. -L./libs -lsub1 -lsub2
-
+</code>
