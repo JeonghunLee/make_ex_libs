@@ -19,10 +19,14 @@ ifeq ($(LIB_MODE),shared)
 	@echo ---------------------------------
 	@echo     Setting Shared Library
 	@echo ---------------------------------
-	export LD_LIBRARY_PATH=./libs
-	@echo "LD_LIBRARY_PATH $(LD_LIBRARY_PATH)"
+	@echo LD_LIBRARY_PATH=$(LD_LIBRARY_PATH)
 endif
-	
+	@echo 
+	@echo ---------------------------------
+	@echo      Test Result Program
+	@echo ---------------------------------
+	@echo 
+	./$(TARGET)	
 
 setup: 
 	@echo ---------------------------------

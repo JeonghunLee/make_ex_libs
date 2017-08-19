@@ -1,10 +1,11 @@
 ## GCC and OTHER OPTION Setting
 
-CC = gcc
+export CC=$(CROSS_COMPILE)gcc
 
-AR = ar
+export AR=$(CROSS_COMPILE)ar
 
-RANLIB = ranlib
+export RANLIB=$(CROSS_COMPILE)ranlib
+
 
 CFLAGS = -O2 -Wall -g
 
@@ -29,6 +30,7 @@ LIB_MODE  = shared
 ifeq ($(LIB_MODE),shared)
 LIB_NANME  = shared
 SHAREDFLAGS = -fPIC 
+export LD_LIBRARY_PATH=./libs
 else
 LIB_NANME  = static
 endif 
