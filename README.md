@@ -1,5 +1,17 @@
 ## Sample Example Makefile
-This sample makefile about main program with static library is easy to make it.  
+This sample makefile about main program with static/shared library  is easy to make it.  
+
+## Setting Makefile 
+<pre><code>$ vi Rule.make
+....
+LIB_MODE  = static
+#LIB_MODE  = shared
+...
+</code></pre>
+
+## Shared Library Setting and Check 
+
+export LD_LIBRARY_PATH = ./libs 
 
 
 ## File Structure 
