@@ -11,8 +11,8 @@ LIB_MODE  = static
 
 ## Shared Library Setting and Check 
 
-export LD_LIBRARY_PATH = ./libs 
-
+<pre><code>$ export LD_LIBRARY_PATH = ./libs 
+</code></pre>
 
 ## File Structure 
 <pre><code>$ tree -a 
@@ -38,7 +38,7 @@ export LD_LIBRARY_PATH = ./libs
 </code></pre>
 
 
-## Result 
+## Make Result 
 
 <pre><code>$ make
 
@@ -95,4 +95,19 @@ Building Main Test Program
 ---------------------------------
 gcc -Iinclude -c MainTest.c
 gcc -Iinclude -o MainTest MainTest.o  tst1.o tst2.o -L. -L./libs -lsub1 -lsub2
+</code></pre>
+
+## Test Result 
+
+Main Test Program 
+
+<pre><code>$./MainTest 
+ Main  TEST start
+Main Layer - TEST01
+SUB1_01 TEST
+SUB1_02 TEST
+ Main Layer - TEST02
+SUB2_01 TEST 
+SUB2_02 TEST
+ Main  TEST finished
 </code></pre>
